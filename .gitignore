@@ -1,6 +1,13 @@
+# Eclipse
 .metadata/
 
+# Arquivos compilados
 bin/
 target/
+out/
 
+# Java
 *.class
+
+# Configurações de IDE (opcional)
+.settings/

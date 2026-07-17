@@ -3,7 +3,7 @@ package fundamentos;
 /**
  * 
  * @author otavio
- * @s
+ * @since 1.0
  * 
  */
 
@@ -17,5 +17,6 @@ public class PrimeiroPrograma {
 		 * 
 		 */
 		System.out.println("Olá mundo!!!");
+		System.out.println("Primeiro programa em Java");
 	}
 }
