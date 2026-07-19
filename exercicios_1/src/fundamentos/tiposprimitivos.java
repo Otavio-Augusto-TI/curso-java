@@ -24,7 +24,7 @@ public class tiposprimitivos {
 		System.out.println("Dias de empresa:" + anosDeEmpresa * 365);
 		
 		// Números de viagem
-		System.out.println("Viages:" + 542 / 2);
+		System.out.println("Viages:" + numerosDeVoos / 2);
 		
 		// Pontos por real
 		System.out.println("Ganho pontos:" + pontosAcomulados / vendasAcomuladas);
