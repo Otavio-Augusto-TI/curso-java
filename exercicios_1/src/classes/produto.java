@@ -6,4 +6,8 @@ public class produto {
 	double preco;
 	double desconto;
 	
+	double precoDesconto () {
+		return preco * desconto;
+	}
+	
 }

@@ -27,7 +27,9 @@ public class produtoTeste {
 		
 		System.out.printf("Desconto do %s é de %.2f valor final fica de R$%.2f \n", p1.nome, p1.preco * p1.desconto, valorFinal1);
 		System.out.printf("Desconto do %s é de %.2f valor final fica de R$%.2f ", p2.nome, p2.preco * p2.desconto, valorFinal2);
+		System.out.println();
 		
+		System.out.println(p1.precoDesconto());
 		
 	}
 }
