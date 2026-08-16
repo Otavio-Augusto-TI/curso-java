@@ -8,9 +8,9 @@ public class produtoTeste {
 		// NOME DA CLASSE IGUAL O NOME DO CONSTRUTOR
 		// NEM SEMPRE SERÁ IGUAL
 	//	Classe           Construtor
-		produto p1 = new produto();
-		p1.nome = "Notebook";
-		p1.preco = 4356.89;
+		produto p1 = new produto("Notebook", 4356.89);
+		// p1.nome = "Notebook";
+		// p1.preco = 4356.89;
 		p1.desconto = 0.25;
 		
 		double valorFinal1 = p1.preco - (p1.preco * p1.desconto);
