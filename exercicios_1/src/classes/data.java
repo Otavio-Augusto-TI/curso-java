@@ -19,4 +19,20 @@ public class data {
 		// return String.format("%d/%d/%d", dia, mes, ano);
 	}
 	
+	// Dois construtores 
+	// 1 - Padrão Data = 01/01/1970
+	// 2 - COnst recebe dia, mes e ano
+	
+	data(){
+		dia = 01;
+		mes = 01;
+		ano = 1970;
+	}
+	
+	data(int dia, int mes, int ano){
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
+	}
+	
 }
