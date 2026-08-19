@@ -10,7 +10,7 @@ public class Conta {
 	Conta(int numeroInicial, String titularInicial){
 		numero = numeroInicial;
 		titular = titularInicial;
-		saldo = 0;
+		saldo = 0;	
 		quatidadeContas++;
 	}
 
