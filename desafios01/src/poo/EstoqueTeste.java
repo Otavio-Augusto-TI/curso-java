@@ -7,62 +7,35 @@ public class EstoqueTeste {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("##########################################");
-		System.out.println("            ESTOQUE CETIS");
-		System.out.println("##########################################");
-		System.out.println();
-
-		int escolha;
+		//Estoque item1 = new Estoque("Notebook", 5, 3500.99);
 		
-		do {
-			System.out.println("[0] - Sair");
-			System.out.println("[1] - Adicionar Item");
-			System.out.println("[2] - Alterar Quantidade");
-			System.out.println("[3] - Alterar Valor");
-			System.out.println("[4] - Consultar");
-			System.out.println();
+		//System.out.println(item1.adicionaItem(5));
+		//System.out.println(item1.alterarValor(4250.99));
+		//System.out.println(item1.removeItem(3));
+		
+		//System.out.println(item1.consultarEstoque());
+		
+		int escolha = 0;
+		
+		while(escolha != 5) {
 			
-			System.out.print("Oque deseja fazer no sistema: ");
+			System.out.println("[1] - Adicionar item");
+			System.out.println("[2] - Remover item");
+			System.out.println("[3] - Alterar Valor");
+			System.out.println("[4] - Consultar estoque");
+			System.out.println("[5] - Sair");
+
+			System.out.println("Oque deseja fazer? ");
 			escolha = input.nextInt();
 			
-			switch (escolha) {
+			switch (escolha){
 			case 1:
-				System.out.println();
-				System.out.println("Digite as informações do produto que deseja adicionar:");
-				System.out.println();
-				
-				System.out.print("Nome do item: ");
-				String nome = input.next();
-				
-				System.out.print("Quantidade do item: ");
-				int quantidade = input.nextInt();
-				
-				System.out.print("Valor do item: ");
-				Double valor = input.nextDouble();
-				
-				
-				// Estoque item1 = new Estoque(nome, quantidade, valor);
-				// System.out.println(item1.nomeItem + " Cadastrado");
-				
-				System.out.println();
-				System.out.println("Deseja cadastrar um novo item? ");
-				
-			case 2:
-				Estoque item1 = new Estoque(nome, quantidade, valor);
-				System.out.println();
-				System.out.print("Qual item deseja adicionar quantidade: ");
-				nome = input.next();
-				System.out.println();
-				System.out.print("Digite a nova quantidade do produto:");
-				quantidade = input.nextInt();
-				System.out.println();
-				System.out.println(item1.alterarQuantidadeItem(quantidade));
 				
 			}
-			
-		} while(escolha != 0);
+		}
 		
 		input.close();
+		
 		
 	}
 }

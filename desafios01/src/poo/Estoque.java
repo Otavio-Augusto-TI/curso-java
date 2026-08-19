@@ -16,20 +16,25 @@ public class Estoque {
 		statusItem = true;
 	}
 	
-	String alterarQuantidadeItem(int entrada){		
-		quantidadeItem =+ entrada; 
-		return "Quantidade do " +  nomeItem + " foi alterada para " + quantidadeItem;
+	String adicionaItem(int entrada){		
+		quantidadeItem = quantidadeItem + entrada; 		
+		return String.format("Entrada de: %d em estoque do item %s. Estoque atual: %d", entrada, nomeItem, quantidadeItem);
 	}
 	
+	String removeItem (int saida) {
+		quantidadeItem = quantidadeItem - saida;
+		return String.format("Saida de: %d em estoque do item %s. Estoque atual: %d", saida, nomeItem, quantidadeItem);
+	}
+
 	String alterarValor(double novoValorItem) {
 		double valorItemOld = valorItem;
-		valorItem = novoValorItem;
-				
-		return "Valor de " + nomeItem + "alterou de R$" + valorItemOld + " para R$" + valorItem;
+		valorItem = novoValorItem;		
+		return String.format("Valor de %s alterou de R$%.2f  para R$%.2f",nomeItem, valorItemOld, valorItem);
 	}
 	
+	
 	String consultarEstoque() {
-		return nomeItem + " tem " + quantidadeItem + " em estoque " + " valor total em estoque é de R$" + valorEmEstoque + " - Status: " + statusItem; 
+		return String.format("O item: %s tem %d em estoque, o valor total em estoque é de R$%.2f; Status: %b", nomeItem, quantidadeItem, quantidadeItem * valorItem, statusItem);
 	}
 	
 }
